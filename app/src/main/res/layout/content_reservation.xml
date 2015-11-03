@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_reservation"
+    tools:context="com.example.jarda.hotelforms.Reservation">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+            <TextView android:text="Registrační formulář hotelu XY!"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="#FF9900"
+                android:textSize="25dp"
+                />
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jméno" />
+            <EditText
+                android:id="@+id/surname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Příjmení" />
+            <EditText
+                android:id="@+id/adresa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adresa" />
+            <EditText
+                android:id="@+id/telefon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefon" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+            <DatePicker
+                android:id="@+id/vyber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </DatePicker>
+            <Spinner
+                android:id="@+id/dates"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                />
+            <RadioButton
+                android:id="@+id/jednoluzkovy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="jednoluzkovy"
+                android:onClick="jednoluzkovy"
+                />
+
+            <RadioButton
+                android:id="@+id/dvouluzkovy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="dvouluzkovy"
+                android:onClick="dvouluzkovy"
+                />
+
+            <RadioButton
+                android:id="@+id/triluzkovy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="triluzkovy"
+                android:onClick="triluzkovy"
+                />
+
+            <CheckBox
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Snídaně"
+                android:id="@+id/snidane"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Odeslat"
+                android:id="@+id/odeslat"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Zrušit"
+                android:id="@+id/zrusit"
+                />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Angličtina"
+                android:id="@+id/english"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
